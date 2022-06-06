@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">HomeForAll</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">דוא"ל</string>
+    <string name="prompt_password">סיסמה</string>
+    <string name="password_authentication">אימות סיסמה</string>
+    <string name="hint_password">סיסמה מינימום 6 תווים</string>
+    <string name="action_sign_in">כניסה</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >6 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="new_user">משתמש חדש</string>
+    <string name="animal">בעל חיים</string>
+    <string name="animalType">סוג</string>
+    <string name="animalGender">מין</string>
+    <string name="location">אזור בארץ</string>
+    <string name="search">חיפוש</string>
+    <string name="adopt">אימוץ</string>
+    <string name="name">שם</string>
+    <string name="create_account">צור חשבון</string>
+    <string name="expand_search_bar">הגדרות חיפוש</string>
+    <string name="no_ads">לא נמצאו מודעות</string>
+    <string name="show_the_number"> הצג מספר טלפון </string>
+    <string name="edit_data">עדכון פרטים</string>
+    <string name="edit_ad">עדכן מודעה</string>
+    <string name="female">נקבה</string>
+    <string name="male">זכר</string>
+    <string name="place_ad">פרסם מודעה</string>
+    <string name="gender">מין</string>
+    <string name="max_row_number_message">תאור יכול להכיל מקסימום 15 שורות</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phone">טלפון</string>
+    <string name="extra_phone">טלפון נוסף</string>
+    <string name="password_changing">שינוי סיסמא</string>
+</resources>

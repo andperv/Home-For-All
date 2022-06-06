@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:weightSum="3"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="220dp"
+        android:layout_margin="3dp"
+        android:elevation="5dp"
+        style="@style/CardViewStyle"
+        tools:ignore="UnusedAttribute">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="4dp"
+           >
+         <RelativeLayout
+             android:id="@+id/imageRvProfileLayout"
+             android:layout_width="128dp"
+             android:layout_height="128dp"
+             android:layout_below="@id/animalSpeciesTxt"
+             android:layout_alignParentRight="true"
+             android:layout_margin="4dp"
+             android:layout_alignParentEnd="true">
+
+           <ImageView
+               android:id="@+id/animalImageViewRV"
+               android:layout_width="128dp"
+               android:layout_height="128dp"
+               android:clickable="true"
+               android:focusable="true" />
+
+             <include
+                 android:id="@+id/image_count_layout_profile"
+                 layout="@layout/image_count"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"/>
+       </RelativeLayout>
+           <TextView
+               android:id="@+id/animalSpeciesTxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Animal_Breed"
+               android:textSize="18sp"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentRight="true"
+              android:layout_marginTop="5dp"
+               android:layout_marginRight="5dp"
+               android:layout_alignParentEnd="true"
+               android:layout_marginEnd="5dp" />
+
+           <TextView
+               android:id="@+id/genderTxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="gender"
+               android:textSize="16sp"
+               android:layout_toLeftOf="@id/animalSpeciesTxt"
+               android:layout_marginTop="6dp"
+               android:layout_marginRight="5dp"
+               android:layout_toStartOf="@id/animalSpeciesTxt"
+               android:layout_marginEnd="5dp" />
+
+           <TextView
+               android:id="@+id/animalDescriptionTxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Animal_Description"
+               android:gravity="start"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:layout_toLeftOf="@id/imageRvProfileLayout"
+               android:layout_below="@id/animalSpeciesTxt"
+               android:layout_alignParentLeft="true"
+               android:layout_marginTop="8dp"
+               android:layout_marginRight="8dp"
+               android:layout_marginLeft="6dp"
+               android:layout_toStartOf="@id/imageRvProfileLayout"
+               android:layout_alignParentStart="true"
+               android:layout_marginEnd="8dp"
+               android:layout_marginStart="6dp" />
+
+           <TextView
+               android:id="@+id/locationTxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="location"
+               android:textSize="14sp"
+               android:textStyle="bold"
+               android:layout_marginTop="5dp"/>
+
+           <TextView
+               android:id="@+id/dateTxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="update_date"
+               android:textSize="13sp"
+               android:layout_below="@id/animalDescriptionTxt"
+               android:layout_alignParentBottom="true"
+               android:textStyle="bold"
+               android:layout_marginTop="5dp"
+               android:layout_margin="3dp"/>
+
+          <Button
+              android:id="@+id/deleteAdButton"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_margin="4dp"
+              android:background="@drawable/ic_delete_forever_black"
+              android:layout_alignParentRight="true"
+              android:layout_below="@id/imageRvProfileLayout"
+              android:layout_alignParentEnd="true" />
+
+           <Button
+               android:id="@+id/editAdButton"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:background="@drawable/ic_edit_black"
+               android:layout_margin="4dp"
+               android:layout_toLeftOf="@id/deleteAdButton"
+               android:layout_below="@id/imageRvProfileLayout"
+               android:layout_toStartOf="@id/deleteAdButton" />
+
+
+
+
+
+
+       </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "775795821343",
+    "firebase_url": "https://homeforall-c896e.firebaseio.com",
+    "project_id": "homeforall-c896e",
+    "storage_bucket": "homeforall-c896e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775795821343:android:457f6b0e9fdb60d035fe2a",
+        "android_client_info": {
+          "package_name": "com.example.homeforall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775795821343-map5hfhn3q2sqp8db68d72vm2ajl03a5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj1xfAqeyDtKyWwbaX-uMSp-oHn31VXXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775795821343-map5hfhn3q2sqp8db68d72vm2ajl03a5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

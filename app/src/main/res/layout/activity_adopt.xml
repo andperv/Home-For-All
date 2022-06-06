@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adoptActivity"
+    tools:context=".AdoptActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <Button
+        android:id="@+id/expand_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/expand_search_bar"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_margin="4dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/search_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/editxt_background">
+
+        <!-- Animal -->
+        <TextView
+            android:id="@+id/animalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="20dp"
+            android:paddingRight="4dp"
+            android:text="@string/animal"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:paddingEnd="4dp"
+            android:layout_alignParentEnd="true" />
+
+        <Spinner
+            android:id="@+id/animalSpinnerAdoptActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/animalTitle"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/spinner_background"
+            android:layout_marginEnd="20dp"
+            android:paddingEnd="20dp" />
+
+        <!-- Animal Type -->
+        <TextView
+            android:id="@+id/animalTypeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="220dp"
+            android:text="@string/animalType"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="220dp" />
+
+        <Spinner
+            android:id="@+id/animalTypeSpinnerAdoptActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/animalTypeTitle"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="220dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/spinner_background"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="220dp"
+            android:paddingEnd="20dp" />
+
+        <!-- Animal Gender -->
+        <TextView
+            android:id="@+id/animalGenderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/animalSpinnerAdoptActivity"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/animalGender"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp" />
+
+        <Spinner
+            android:id="@+id/animalGenderSpinnerAdoptActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/animalGenderTitle"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/spinner_background"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:paddingEnd="20dp" />
+
+        <!-- Location -->
+        <TextView
+            android:id="@+id/locationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/animalSpinnerAdoptActivity"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="220dp"
+            android:text="@string/location"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="220dp" />
+
+        <Spinner
+            android:id="@+id/locationSpinnerAdoptActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/locationTitle"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="220dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/spinner_background"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="220dp"
+            android:paddingEnd="20dp" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationSpinnerAdoptActivity"
+            android:layout_centerHorizontal="true"
+
+            android:layout_margin="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:background="@drawable/button_background"
+            android:text="@string/search"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/no_ads_txt"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/no_ads"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/adoptRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:layout_margin="2dp"/>
+
+    </RelativeLayout>
+   </LinearLayout>
+ </RelativeLayout>

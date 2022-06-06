@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/editxt_background"
+    >
+
+    <!-- RecycleView row in AdoptActivity -->
+    <LinearLayout
+        android:id="@+id/adSmallCardAdoptActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_margin="3dp"
+        android:weightSum="10"
+        >
+       <!-- Mini Card -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:id="@+id/animalTypeRecViewRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="animal Type"
+                android:layout_margin="4dp"/>
+
+            <TextView
+                android:id="@+id/animalGenderRecViewRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="animal gender"
+                android:layout_margin="4dp"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/locationRecViewRow"
+            android:layout_width="0dp"
+            android:background="@drawable/left_border"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:text="location"/>
+
+        <TextView
+            android:id="@+id/animalDescriptionRecViewRow"
+            android:layout_width="0dp"
+            android:background="@drawable/left_border"
+            android:layout_height="match_parent"
+            android:maxLines="4"
+            android:textSize="13sp"
+            android:layout_weight="4.3"
+            android:padding="8dp"
+            android:text="Animal Description"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.7"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageRecViewRow"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- Full Card in Adopt Activity                   -->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/adFullCardAdoptActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:elevation="5dp"
+        android:visibility="gone"
+        style="@style/CardViewStyle"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            >
+           <RelativeLayout
+               android:id="@+id/imageLayoutRVCard"
+               android:layout_width="128dp"
+               android:layout_height="128dp"
+               android:layout_alignParentRight="true"
+               android:layout_below="@id/animalTypeRVCard"
+               android:layout_margin="8dp"
+               android:layout_alignParentEnd="true">
+            <ImageView
+                android:id="@+id/animalImageRVCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true" />
+
+               <include
+                   android:id="@+id/image_count_layout_adopt"
+                   layout="@layout/image_count"
+                   android:layout_width="wrap_content"
+                   android:visibility="gone"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"/>
+
+
+
+        </RelativeLayout>
+
+            <TextView
+                android:id="@+id/animalTypeRVCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animal_Breed"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/animalGenderRVCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gender"
+                android:textSize="16sp"
+                android:layout_toLeftOf="@id/animalTypeRVCard"
+                android:layout_margin="6dp"
+                android:layout_toStartOf="@id/animalTypeRVCard"
+                />
+
+            <TextView
+                android:id="@+id/animalDescriptionRVCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animal_Description"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_toLeftOf="@id/imageLayoutRVCard"
+                android:layout_below="@id/animalTypeRVCard"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="6dp"
+                android:layout_toStartOf="@id/imageLayoutRVCard"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="6dp" />
+
+            <TextView
+                android:id="@+id/locationRVCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="location"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/imageLayoutRVCard"
+                android:layout_alignRight="@+id/showNumberTxt"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/dateRVCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="update_date"
+                android:textSize="13sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/close_btn_fullCard"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_close_dark_24dp"
+                />
+
+            <Button
+                android:id="@+id/showNumberBtn"
+                android:layout_width="115dp"
+                android:layout_height="30dp"
+                android:text="@string/show_the_number"
+                android:textSize="14sp"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/animalDescriptionRVCard"
+                android:layout_toRightOf="@id/dateRVCard"
+                android:layout_toEndOf="@id/dateRVCard" />
+
+            <TextView
+                android:id="@+id/showNumberTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/animalDescriptionRVCard"
+                android:layout_toRightOf="@id/showOwnerTxt"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_margin="1dp"
+                android:layout_toEndOf="@id/showOwnerTxt" />
+
+            <TextView
+                android:id="@+id/showOwnerTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/animalDescriptionRVCard"
+                android:layout_toRightOf="@id/dateRVCard"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingBottom="6dp"
+                android:layout_margin="1dp"
+                android:layout_toEndOf="@id/dateRVCard" />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
